@@ -43,6 +43,10 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.6.0'
     implementation 'com.github.smarteist:autoimageslider:1.4.0'
+//image loader library
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    ////firebase database dependency
+    implementation 'com.google.firebase:firebase-database:19.2.1'
 
     implementation platform('com.google.firebase:firebase-bom:31.1.0')
     implementation 'com.google.firebase:firebase-analytics'
