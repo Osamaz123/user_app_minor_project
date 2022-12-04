@@ -10,4 +10,27 @@
 
     <string name="about_college">this is zhcet</string>
 
+    <string name="computer_engineering">Computer Engineering</string>
+    <string name="electronics_and_communication_engineering">Electronics and Communication Engineering</string>
+    <string name="mechanical_department">Mechanical Department</string>
+    <string name="electrical_department">Electrical Department</string>
+    <string name="civil_department">Civil Department</string>
+    <string name="chemical_department">Chemical Department</string>
+    <string name="petrochemical_department">Petrochemical Department</string>
+    <string name="About_College">The Zakir Husain College of Engineering and Technology (ZHCET) was established in 1935,
+        as a constituent college of the Aligarh Muslim University. The College has a land area of 113 acres and a built-up area of 22960 sq.m.
+        The College\'s excellence was identified out of the 400 institutions across the country and was put in the list of seven selected
+        Institutions to be upgraded to the level of IIT. It has been ranked 21st by the India Today among "India's Best Engineering College 2015".
+        The college has also been ranked 35th in the "Top Engineering Colleges 2015" by Outlook India.</string>
+
+    <string name="CompEngg_desc">The Department of Computer Engineering was created in the Faculty of Engineering in the year 1991.
+        The Department is currently running a B.Tech. programme in Computer Engineering and an M.Tech programme in Computer Science &amp; Engineering
+        with specialization in Software Engineering. The Department has also commenced an M.Tech programme in Computer Science &amp; Engineering with
+        specialization in Artificial Intelligence from the session 2020-21. The Department also offers Ph.D. Programme in emerging areas of
+        Computer Engineering.</string>
+    <string name="MechEngg_desc">The Department of Mechanical Engineering is one of the oldest Engineering Department of Faculty of
+        Engineering and Technology, Aligarh Muslim University, Aligarh. It is one of the biggest departments in the University with a student
+        strength of about 700. It offers degrees related to Ph.D., M.Tech. (Thermal Engineering, Industrial and Production Engg., Machine Design,
+        Robotics and Automation), B.Tech. and B.E. (Evening) programs.</string>
+
 </resources>
