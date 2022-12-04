@@ -28,7 +28,7 @@
 
     <fragment
         android:id="@+id/navigation_about_us"
-        android:name="com.example.zhcetapp.ui.home.HomeFragment"
+        android:name="com.example.zhcetapp.ui.about.AboutFragment"
         android:label="About"
         tools:layout="@layout/fragment_home" />
 

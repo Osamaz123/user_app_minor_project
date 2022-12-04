@@ -218,9 +218,10 @@
 
                 <ImageView
                     android:id="@+id/map"
-                    android:layout_width="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
                     android:layout_height="230dp"
-                    android:src="@drawable/zhcet_image" />
+                    android:src="@drawable/zhcet_map" />
 
 
 
