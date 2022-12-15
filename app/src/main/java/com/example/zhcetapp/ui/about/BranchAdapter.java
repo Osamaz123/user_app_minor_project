@@ -36,7 +36,9 @@ public class BranchAdapter extends PagerAdapter {
     @NonNull
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
+
         View view = LayoutInflater.from(context).inflate(R.layout.branch_item_layout, container, false);
+
         ImageView brIcon;
         TextView brTitle, brDesc;
         brIcon = view.findViewById(R.id.br_icon);

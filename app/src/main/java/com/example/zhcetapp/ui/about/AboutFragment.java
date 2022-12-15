@@ -26,18 +26,18 @@ private List<BranchModel> list;
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_about, container, false);
-       list = new ArrayList<>();
-       list.add(new BranchModel(R.drawable.ic_computer_24,"Computer Engineering", "The Department of Computer Engineering was "));
-        list.add(new BranchModel(R.drawable.ic_settings_24,"Mechanical Engineering", "The Department of Mechanical Engineeh a student strength of about 700"));
-
-        adapter = new BranchAdapter(getContext(),list);
-        viewPager = view.findViewById(R.id.viewPager);
-        viewPager.setAdapter(adapter);
-
-        ImageView imageView = view.findViewById(R.id.collegeImage);
-        Glide.with(getContext())
-                .load("https://www.google.com/imgres?imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D2776579842411753&imgrefurl=https%3A%2F%2Fwww.facebook.com%2FZHCETAMU%2F&tbnid=16FsmVDV1iA8zM&vet=12ahUKEwiw2JHykN_7AhVK_TgGHchrAKYQMygAegUIARCgAQ..i&docid=k-PT3nAtUDZhJM&w=640&h=489&itg=1&q=zhcet&hl=en-GB&ved=2ahUKEwiw2JHykN_7AhVK_TgGHchrAKYQMygAegUIARCgAQ")
-                .into(imageView);
+//       list = new ArrayList<>();
+//       list.add(new BranchModel(R.drawable.ic_computer_24,"Computer Engineering", "The Department of Computer Engineering was "));
+//        list.add(new BranchModel(R.drawable.ic_settings_24,"Mechanical Engineering", "The Department of Mechanical Engineeh a student strength of about 700"));
+//
+//        adapter = new BranchAdapter(getContext(),list);
+//        viewPager = view.findViewById(R.id.viewPager);
+//        viewPager.setAdapter(adapter);
+//
+//        ImageView imageView = view.findViewById(R.id.collegeImage);
+//        Glide.with(getContext())
+//  .load("https://firebasestorage.googleapis.com/v0/b/college-management-app-c31a2.appspot.com/o/zhcet2.jpg?alt=media&token=07117d23-faab-4a50-b3f4-17c4b17b624e")
+//                .into(imageView);
 
         return view;
     }

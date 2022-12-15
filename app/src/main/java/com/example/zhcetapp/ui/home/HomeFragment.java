@@ -20,6 +20,9 @@ public class HomeFragment extends Fragment {
 
 private SliderView sliderView;
 private ImageView map;
+private  int[] images;
+private  String[] text;
+private SliderAdapter adapter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -27,10 +30,18 @@ private ImageView map;
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_home, container, false);
         sliderView = view.findViewById(R.id.slider);
-        sliderView.setIndicatorAnimation(IndicatorAnimationType.FILL);
+//        sliderView.setIndicatorAnimation(IndicatorAnimationType.FILL);
+//        sliderView.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION);
+//        sliderView.setScrollTimeInSec(1);
+        images = new int[]{R.drawable.zhcet_image, R.drawable.zhcet2, R.drawable.zhcet3, R.drawable.zhcet4};
+        text = new String[]{"1/4","2/4","3/4","4/4"};
+        adapter = new SliderAdapter(images,text);
+        sliderView.setSliderAdapter(adapter);
         sliderView.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION);
-        sliderView.setScrollTimeInSec(1);
-        setSliderViews();
+        sliderView.setIndicatorAnimation(IndicatorAnimationType.SLIDE);
+        sliderView.startAutoCycle();
+
+
 
         map = view.findViewById(R.id.map);
 
@@ -50,10 +61,5 @@ private ImageView map;
         startActivity(intent);
     }
 
-    private void setSliderViews() {
 
-        for(int i=0;i<5;i++){
-
-        }
-    }
 }

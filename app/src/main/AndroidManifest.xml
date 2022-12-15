@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ZHCETApp">
         <activity
+            android:name=".DevelopersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ebook.PdfViewerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ebook.EbookActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

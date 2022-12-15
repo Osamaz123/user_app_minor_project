@@ -8,10 +8,13 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.zhcetapp.ebook.EbookActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
@@ -59,30 +62,52 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         switch ( item.getItemId()){
             case R.id.navigation_video:
-                Toast.makeText(this, "video", Toast.LENGTH_SHORT).show();
+               getUrl("https://www.youtube.com/@EngineeringFunda");
                 break;
             case R.id.navigation_ebook:
-                Toast.makeText(this, "Ebook", Toast.LENGTH_SHORT).show();
+               startActivity(new Intent(this, EbookActivity.class));
                 break;
-            case R.id.navigation_rate:
-                Toast.makeText(this, "Rate Us", Toast.LENGTH_SHORT).show();
-                break;
+
             case R.id.navigation_website:
-                Toast.makeText(this, "website", Toast.LENGTH_SHORT).show();
+                getUrl("https://amu.ac.in/colleges/zakir-husain-college-of-engineering-and-technology");
                 break;
-            case R.id.navigation_theme:
-                Toast.makeText(this, "Theme", Toast.LENGTH_SHORT).show();
-                break;
+
             case R.id.navigation_share:
-                Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
+                share();
+
                 break;
             case R.id.navigation_developers:
-                Toast.makeText(this, "Developers", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, DevelopersActivity.class));
                 break;
 
 
 
         }
         return true;
+    }
+
+    private void getUrl(String s) {
+        Uri uri = Uri.parse(s);
+        startActivity(new Intent(Intent.ACTION_VIEW,uri));
+    }
+
+    private void share() {
+        Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+
+        // type of the content to be shared
+        sharingIntent.setType("text/plain");
+
+        // Body of the content
+        String shareBody = "Your Body Here";
+
+        // subject of the content. you can share anything
+        String shareSubject = "Your Subject Here";
+
+        // passing body of the content
+        sharingIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
+
+        // passing subject of the content
+        sharingIntent.putExtra(Intent.EXTRA_SUBJECT, shareSubject);
+        startActivity(Intent.createChooser(sharingIntent, "Share using"));
     }
 }
